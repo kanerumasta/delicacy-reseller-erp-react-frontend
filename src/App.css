@@ -1,0 +1,61 @@
+
+*{
+    padding:0;
+    outline:0;
+    margin:0;
+ 
+    
+}
+body{
+    
+    
+}
+.gallery{
+    width : 100%;
+    height : 100%;
+    display : flex ;
+    flex-wrap:wrap;
+    
+}
+.card{
+    width: 200px;
+    height: 250px;
+    margin : 18px;
+}
+
+.w-full{
+    width:100%
+}
+.bg-w{
+    background:#fff;
+}
+.height-30{
+    height:30px
+}
+.height-80{
+    height: 80px;
+}
+
+.accordion-menu{ 
+    transition : all 0.3s ease;
+   
+    &:hover {
+    
+      
+        cursor: pointer;
+    }
+}
+
+.hover-row{
+    &:hover{
+        background:#cce2fc;
+        color : #0070f0;
+        
+    }
+}
+.nav-content{
+    width:90vw;
+}
+.dashboard{
+    background-color: blueviolet;
+}

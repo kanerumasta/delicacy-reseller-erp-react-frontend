@@ -1,0 +1,20 @@
+.image-holder{
+    height : 200px;
+    width : 200px;
+    overflow : hidden;
+    position: relative;
+}
+.image-holder img{
+    
+    object-fit: contain;
+    width : 100%;
+}
+.image-holder span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    width: 100%; /* Ensure the span takes the full width of the image container */
+}
