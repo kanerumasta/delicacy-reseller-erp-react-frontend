@@ -28,16 +28,15 @@ api.interceptors.response.use(
    return response;
  },
  (error) => {
-   const request = error.config; //this is actual request that was sent, and error is received in response to that request
+   const request = error.config; //actual Request
    if (error.response) {
-    // The request was made and the server responded with a status code
-    // that falls out of the range of 2xx
+  
     console.error('Response error:', error.response.status, error.response.data);
   } else if (error.request) {
     console.log(error)
     
   } else {
-    // Something happened in setting up the request that triggered an Error
+   
     console.error('Request setup error:', error.message);
   }
    if (error.response.status === 401 && !request._retry) {
